@@ -1,0 +1,35 @@
+Algorithm SentenceAnalysis
+    Input: A sentence ending with a point
+    Output: Length of the sentence, number of words, number of vowels
+    
+    Variables:
+        sentence: string   // To store the input sentence
+        length: integer    // To store the length of the sentence
+        numWords: integer  // To store the number of words
+        numVowels: integer // To store the number of vowels
+        char: character    // To store the current character being processed
+    
+    Initialize length to 0
+    Initialize numWords to 1 // The last word won't have a space after it
+    Initialize numVowels to 0
+    
+    Display "Enter a sentence ending with a point:"
+    Read sentence
+    
+    FOR each character char in sentence DO
+        Increment length by 1
+        
+        IF char is a space THEN
+            Increment numWords by 1
+        
+        IF char is a vowel (a, e, i, o, or u) THEN
+            Increment numVowels by 1
+        END IF
+    END FOR
+    
+    Decrement numWords by 1 // To exclude the point from the count
+    
+    Display "Length of the sentence:", length
+    Display "Number of words:", numWords
+    Display "Number of vowels:", numVowels
+End Algorithm
