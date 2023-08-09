@@ -7,7 +7,7 @@ Algorithm SentenceAnalysis
         length: integer    // To store the length of the sentence
         numWords: integer  // To store the number of words
         numVowels: integer // To store the number of vowels
-        char: character    // To store the current character being processed
+        character: char    // To store the current character being processed
     
     Initialize length to 0
     Initialize numWords to 1 // The last word won't have a space after it
